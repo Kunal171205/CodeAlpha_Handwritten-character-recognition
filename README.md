@@ -10,7 +10,6 @@ This project implements a **Convolutional Neural Network (CNN)** to accurately c
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
 - [Results](#results)
-- [Installation & Setup](#installation--setup)
 - [How to Run](#how-to-run)
 - [Project Structure](#project-structure)
 - [Future Improvements](#future-improvements)
@@ -76,11 +75,57 @@ The CNN model is built using the Keras `Sequential()` API:
 
 ---
 
-## ⚙️ Installation & Setup
 
-### Prerequisites
+## ▶️ How to Run
 
-Ensure the following Python packages are installed:
+1. Download the dataset from Kaggle and place it at the correct location as referenced in the notebook.
+2. Open the Jupyter Notebook:
 
 ```bash
-pip install numpy pandas matplotlib opencv-python scikit-learn keras tensorflow
+jupyter notebook handwritten-character-recognition-using-cnn.ipynb
+```
+
+3. Execute each cell step-by-step:
+   - Load and preprocess the data
+   - Build and train the CNN model
+   - Evaluate performance
+   - Display predictions on random test samples
+
+---
+
+## 📁 Project Structure
+
+```
+handwritten-character-recognition/
+│
+├── handwritten-character-recognition-using-cnn.ipynb   # Main notebook
+├── README.md                                            # Project documentation
+├── dataset/                                             # Folder for CSV file
+├── outputs/                                             # Graphs, models, logs (optional)
+└── requirements.txt                                     # (Optional) Dependency list
+```
+
+---
+
+## 🚀 Future Improvements
+
+- ✅ Add support for lowercase letters  
+- 🔢 Extend recognition to include digits (0–9)  
+- 🎨 Apply image augmentation for robustness  
+- 📱 Integrate with a GUI using OpenCV  
+- 🌐 Deploy using Flask/Streamlit as a web service  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute with proper attribution.
+
+---
+
+## 🙋‍♂️ Acknowledgements
+
+- Dataset from [Kaggle](https://www.kaggle.com/datasets/sachinpatel21/az-handwritten-alphabets-in-csv-format)  
+- Keras and TensorFlow teams for deep learning frameworks  
+- Jupyter for interactive notebook environment  
